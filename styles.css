@@ -1,0 +1,513 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /*there is a backup CSS from CHAT!! DO NOT CRY
+  */
+  #main-doc {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    max-width: 1300px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  /*section {
+      position: relative; 
+      padding: 20px 0;
+  }
+  
+  
+  chat end of section -*/
+  /*!!!!!i do not know if i like what happen here****going to beddddddddd!
+  
+  
+  *, #body, #main {
+    margin: 0;
+  }*/
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Gotu, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f4f4f4;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    font-family: 'kavivanar';
+     }
+  
+  
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  /* CSS general end*/
+  
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to right, #78E8DB, #308E83);
+    height: auto;
+    padding: 5px 0;
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+      }
+  
+  #nav-bar h1 {
+    text-align: left;
+     color: #000000;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 25px;
+    font-family: 'Inknut Antiqua', serif;
+    }
+  
+  .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    display: inline-block;
+  }
+  
+  .nav-link:hover {
+    color: #B5B1B1;
+  }
+  
+  ul {
+          margin: 20px;
+           }
+  
+  li {
+    display: inline-block;
+   
+   }
+  
+  .flex-container {
+    padding: 65px;
+    display: flex;
+    flex-wrap: inline;
+      justify-content: center; 
+  }
+  
+  #hero {
+     background: linear-gradient(to right, #FFFFFF, #78E8DB, #FFFFFF);
+    color: #000000;
+    padding: 80px 120px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px;
+        box-sizing: border-box;
+  }
+  
+  
+  #hero .text-container {
+    flex: 1;
+    text-align: left; 
+  }  
+  
+  #hero h2 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  #hero h3 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  
+  #hero p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /*Chat with Media!*/
+  @media (max-width: 768px) {
+    #hero {
+      flex-direction: column; 
+      padding: 20px;
+    }
+  
+    #hero h2 {
+      font-size: 32px;
+    }
+  
+    #hero h3 {
+      font-size: 24px;
+    }
+  
+    #hero p {
+      font-size: 16px;
+    }
+     #subscribe {
+      width: 90%; 
+    }
+  }
+  
+  #subscribe {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  #subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #subscribe label {
+    font-size: 16px;
+  }
+  
+  #submit textarea {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 75%; 
+  }
+  
+  #submit {
+    background-color: #B5B1B1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #308E83;
+  }
+  
+  #subscribe textarea, #subscribe input {
+    width: 100%; 
+    max-width: 350px;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #555;
+    font-style: italic;
+  }
+  
+  #additional-info {
+     font-family: 'Inknut Antiqua', serif; 
+    font-size: 18px; 
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 100%;
+  }
+  
+  
+  /* Image Gallery Section */
+  #image-gallery {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  #image-gallery h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2980b9;
+  }
+  
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+     background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+  
+  #image-gallery h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2980b9;
+    
+  }
+  
+  #image-gallery button:hover {
+    background-color: #308E83;  
+  }
+  
+  
+  
+  .image-item {
+    flex: 1 1 300px; 
+    max-width: 300px; 
+    text-align: center;
+  }
+  
+  .image-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /*remember this for later*/
+  }
+  
+  .image-item img:hover {
+    transform: scale(1.1); 
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #000000;
+  }
+  /*chat help here*/
+  .online_listing {
+    display: wrap-flex;
+    justify-content: center;
+    align-items: center; 
+    height: auto; 
+    text-align: center;
+  }
+  
+  /*chat help here*/
+  button {
+      padding: 12px 20px;
+    font-size: 16px;
+    background: linear-gradient(to top, #70D7CB, #D9D9D9); 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; 
+  }
+  
+  button a {
+    text-decoration: none;
+    color: inherit; 
+  }
+  
+  
+  button:hover {
+    background-color: #308E83; 
+    transform: scale(1.05);
+    }
+  
+  
+  
+  @media (max-width: 768px) {
+    #services {
+      flex-direction: column;  
+    }
+  }
+  
+  .flex-2 {
+    display: flex;
+    flex-wrap: inline;
+    felx: wrap;
+    justify-content: center; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    #flex-2 {
+      flex-direction: column;  
+      padding: 20px;
+      text-align: center; 
+    }
+  
+    #flex-2 h2 {
+      font-size: 32px;
+    }
+  
+    #flex-2 h3 {
+      font-size: 24px;
+    }
+  
+    #flex-2 p {
+      font-size: 16px;
+    }
+  }
+  
+  /*yay i did it not chat this time*/
+  .quote {
+    flex: flex-wrap;
+     padding: 20px;
+    min-width: 25rem;
+    max-width: 35rem;
+  }
+  
+  #services h2 {
+    text-align: center; 
+    width: 100%;
+  }
+  
+  #services {
+    display: flex;
+   justify-content: center;  
+    align-items: center;
+   flex-wrap: wrap;  
+   margin-top: 30px;
+    padding: 20px; 
+    gap: 20px; 
+  }
+  
+  #services section {
+     background: linear-gradient(to bottom, #B5B1B1, #5DB5AA);
+    text-align: center;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+   width: auto;
+    height: auto;
+    margin: 10px; /* Space between cards */
+     cursor: pointer;
+    transition: transform 0.3s ease; /* hover effect*/
+  }
+  
+  #services button {
+    display: flex;
+   justify-content: center;
+    background: linear-gradient(to top, #70D7CB, #D9D9D9);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+  
+  
+  
+  #services section:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, #60C3B8, #9BD2D1);
+  }
+  /*one  --dont forget about services-container in CSS i9f this doesnt work.
+  .services {
+    padding: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }*/
+  
+  .services-container {
+    display: flex;
+  }
+  
+  
+  @media (max-width: 768px) {
+    #services {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+      #services section {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  #mission-statement {
+    background: linear-gradient(to right, #FFFFFF, #78E8DB, #FFFFFF);
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+  }
+  
+  #mission-statement h2 {
+    margin-bottom: 20px; 
+  }
+  
+  #mission-statement p {
+    line-height: 1.65rem;
+    word-spacing: 5px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 55rem;
+  }
+  
+  
+  footer {
+    background: linear-gradient(to left, #78E8DB, #308E83);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /*footer p {
+    margin: 5px 0;
+  } need this*/
+  
+  footer .left, footer .right {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  footer .left a, footer .right a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer .left a:hover, footer .right a:hover {
+    color: #308E83;
+  }
+  
+  footer .left {
+    justify-content: flex-start; 
+  }
+  
+  footer .right {
+    justify-content: flex-end;
+  }
+  
